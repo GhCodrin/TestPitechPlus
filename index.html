@@ -127,25 +127,12 @@
                     $('#coordY').text(data['y']);
                 });
             }
-
-
-            // let randWidth = $.post("index.php", {'width': width, action: "getRandomNumber" }, function (data) {
-            //     console.log(data);
-            // });
-
-
-            //drawPoint(ctx, getRandomInt(height), getRandomInt(width));
         }
-
-        // function getRandomInt(max) {
-        //     return Math.floor(Math.random() * max);
-        // }
 
         function drawPoint(context, x, y) {
             color = '#000000';
             size = 5;
 
-            // to increase smoothing for numbers with decimal part
             var pointX = Math.round(x - size);
             var pointY = Math.round(y - size);
 
